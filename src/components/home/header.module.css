@@ -1,0 +1,16 @@
+.baseHeader {
+  border-top: 1px solid #363636;
+  border-bottom: 2px solid #363636;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  background: #1a1a1a;
+  height: 10vh;
+  padding: 0px 20px;
+  gap: 10px;
+  z-index: 101;
+  width: 100%;
+  .logoImg {
+    border-radius: 100%;
+  }
+}
