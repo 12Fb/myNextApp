@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import homeCss from "./home.module.css";
+import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 const routerArr = [
   {
@@ -30,12 +31,11 @@ function LeftSide(routerData = []) {
   return (
     <>
       <div className={homeCss.leftSide}>
-        <div>ddddd</div>
-        <div>ddddd</div>
-        <div>ddddd</div>
-        <div>ddddd</div>
-        <div>ddddd</div>
-        <div>ddddd</div>
+        {routerArr.map((item) => (
+          <Link key={item.path} href={item.path}>
+            {item.name}
+          </Link>
+        ))}
       </div>
     </>
   );
