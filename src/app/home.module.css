@@ -1,9 +1,3 @@
-.Link {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  width: 100%;
-}
 .emptyHeader {
   height: 10vh;
   position: relative;
@@ -16,18 +10,7 @@
   display: flex;
   z-index: 100;
 }
-.leftSide {
-  border-right: 2px solid #363636;
-  padding: 15px;
-  gap: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: auto;
-  position: fixed;
-  height: 100%;
-  width: 200px;
-}
+
 .leftSide div {
   color: burlywood;
   padding: 5px;

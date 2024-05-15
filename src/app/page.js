@@ -24,8 +24,7 @@ export default function Home() {
   }, []);
   return (
     <>
-      <div>{nowDate}</div>
-      <div>{nowDate}</div>
+      <div suppressHydrationWarning>{nowDate}</div>
     </>
   );
 }
