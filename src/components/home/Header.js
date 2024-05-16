@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import headerCss from "./header.module.css";
 import logoImg from "@/assets/bigHead.jpg";

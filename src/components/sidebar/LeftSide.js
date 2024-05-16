@@ -2,7 +2,6 @@ import routerArr from "./routeData";
 import leftSideCss from "./leftSide.module.css";
 import Link from "next/link";
 function LeftSide() {
-  console.log(routerArr);
   return (
     <>
       <div className={leftSideCss.leftSide}>
