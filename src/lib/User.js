@@ -27,18 +27,27 @@ async function findUser(name) {
       name: name,
     },
   });
-  return re.length === 0 ? false : true;
+  console.log(re?.id);
 }
 //查找全部
 async function getAllUsers() {
   const users = await User.findAll();
   console.log("All users:", JSON.stringify(users, null, 2));
 }
+//
+async function getUserByName(name) {
+  const users = await User.findOne({
+    where: {
+      name: name,
+    },
+  });
+  console.log(users);
+}
 //执行函数
 (async () => {
   console.log("开始执行");
   //   await addUser({ name: "张三", age: 18, cash: 1000 });
   //   await getAllUsers();
+  // await findUser("张三");
   await findUser("张三");
-  await findUser("张三1");
 })();
